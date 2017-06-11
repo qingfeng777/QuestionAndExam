@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 11:12:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ming.entity.Subject" table="SUBJECT">
+        <id name="SubjectId" type="java.lang.Integer">
+            <column name="SUBJECTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="subName" type="java.lang.String">
+            <column name="SUBNAME" />
+        </property>
+        <property name="bookDesc" type="java.lang.String">
+            <column name="BOOKDESC" />
+        </property>
+        <property name="bookInfo" type="java.lang.String">
+            <column name="BOOKINFO" />
+        </property>
+        <property name="cdate" type="java.util.Date">
+            <column name="CDATE" />
+        </property>
+        <property name="sectionNum" type="java.lang.Integer">
+            <column name="SECTIONNUM" />
+        </property>
+        <property name="SOneDesc" type="java.lang.String">
+            <column name="SONEDESC" />
+        </property>
+        <property name="STwoDesc" type="java.lang.String">
+            <column name="STWODESC" />
+        </property>
+        <property name="SThreeDesc" type="java.lang.String">
+            <column name="STHREEDESC" />
+        </property>
+        <property name="SFourDesc" type="java.lang.String">
+            <column name="SFOURDESC" />
+        </property>
+        <property name="SFiveDesc" type="java.lang.String">
+            <column name="SFIVEDESC" />
+        </property>
+        <property name="SSixDesc" type="java.lang.String">
+            <column name="SSIXDESC" />
+        </property>
+        <property name="SSevenDesc" type="java.lang.String">
+            <column name="SSEVENDESC" />
+        </property>
+        <property name="SEightDesc" type="java.lang.String">
+            <column name="SEIGHTDESC" />
+        </property>
+        <property name="SNineDesc" type="java.lang.String">
+            <column name="SNINEDESC" />
+        </property>
+        <property name="STenDesc" type="java.lang.String">
+            <column name="STENDESC" />
+        </property>
+        <property name="SElevenDesc" type="java.lang.String">
+            <column name="SELEVENDESC" />
+        </property>
+        <property name="STwelveDesc" type="java.lang.String">
+            <column name="STWELVEDESC" />
+        </property>
+        <property name="SThirteenDesc" type="java.lang.String">
+            <column name="STHIRTEENDESC" />
+        </property>
+        <property name="SFourteenOneDesc" type="java.lang.String">
+            <column name="SFOURTEENONEDESC" />
+        </property>
+        <property name="SFifteenDesc" type="java.lang.String">
+            <column name="SFIFTEENDESC" />
+        </property>
+    </class>
+</hibernate-mapping>

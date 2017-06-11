@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 11:12:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ming.entity.TestPaperInfo" table="TESTPAPERINFO">
+        <id name="TestPaperInfoId" type="java.lang.Integer">
+            <column name="TESTPAPERINFOID" />
+            <generator class="native" />
+        </id>
+        <property name="subjectId" type="java.lang.Integer">
+            <column name="SUBJECTID" />
+        </property>
+        <property name="teacherId" type="java.lang.Integer">
+            <column name="TEACHERID" />
+        </property>
+        <property name="beginTime" type="java.util.Date">
+            <column name="BEGINTIME" />
+        </property>
+        <property name="endTime" type="java.util.Date">
+            <column name="ENDTIME" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+        <property name="proctor" type="java.lang.String">
+            <column name="PROCTOR" />
+        </property>
+        <property name="tape" type="java.lang.String">
+            <column name="TAPE" />
+        </property>
+        <property name="choiceCount" type="java.lang.Integer">
+            <column name="CHOICECOUNT" />
+        </property>
+        <property name="fillCount" type="java.lang.Integer">
+            <column name="FILLCOUNT" />
+        </property>
+        <property name="tFCount" type="java.lang.Integer" access="field">
+            <column name="TFCOUNT" />
+        </property>
+        <property name="comprehensiveCount" type="java.lang.Integer">
+            <column name="COMPREHENSIVECOUNT" />
+        </property>
+        <property name="choiceTotalScore" type="java.lang.Integer">
+            <column name="CHOICETOTALSCORE" />
+        </property>
+        <property name="TFTotalScore" type="java.lang.Integer">
+            <column name="TFTOTALSCORE" />
+        </property>
+    </class>
+</hibernate-mapping>

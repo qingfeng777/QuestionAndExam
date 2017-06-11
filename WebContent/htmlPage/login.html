@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>欢迎</title>
+<!-- Custom Theme files -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+<link href="../css/stylelogin.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--Google Fonts-->
+
+</head>
+<script type="text/javascript" src="../js/jquery-3.0.0.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$("#loginBtn").click(function(){
+			var url="../user/prLogin";
+			var args={"userName":$("#userName").val(),"password":$("#password").val()};
+			$.post(url,args,function(res){
+				var data = JSON.parse(res);
+				if(data.success){
+					console.log(data.tip);
+					alert(data.tip);
+					//访问跳转#	
+				 	var form = document.forms[0];
+					form.action="../user/login";
+					form.method="post";
+					form.submit(); 
+					//$("#loginBtn").click();
+				}else{
+					alert(data.tip);
+				  }
+				
+				});
+			
+			
+			});
+		
+		
+		});
+	/* $post.({
+	url: ,
+	data: ,
+	success: function (response) {
+		if(reponse.success) {
+			
+		}
+	},
+	false: function (res){
+		
+	}
+}) */
+
+
+</script>
+<body>
+<div class="login">
+	<h2>欢迎你的加入！</h2>
+	<div class="login-top">
+		<h1>登陆</h1>
+		<form action="../user/login">
+			<input id="userName" type="text" name="userName" value="userName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Id';}">
+			<input id="password"  type="password" name="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
+	   
+	    <div class="forgot">
+	    	<a href="#">忘记密码？</a>
+	    	<input class="btn btn-default"  id="loginBtn" type="button" value="登陆" >
+	    </div>
+	     </form>
+	</div>
+	<div class="login-bottom">
+		<h3>新用户？ &nbsp;<a href="user/toUserAdd">注册</a></h3>
+	</div>
+</div>	
+<div class="copyright">
+	<p>名白软件服务</p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 11:12:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ming.entity.OperRecordate" table="OPERRECORDATE">
+        <id name="operRecordateId" type="java.lang.String">
+            <column name="OPERRECORDATEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="fileId" type="java.lang.Integer">
+            <column name="FILEID" />
+        </property>
+        <property name="odata" type="java.util.Date">
+            <column name="ODATA" />
+        </property>
+        <property name="OperateUser" type="java.lang.String">
+            <column name="OPERATEUSER" />
+        </property>
+        <property name="operateDeclare" type="java.lang.Integer">
+            <column name="OPERATEDECLARE" />
+        </property>
+    </class>
+</hibernate-mapping>

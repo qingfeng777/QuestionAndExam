@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 11:12:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ming.entity.Teacher2Subject" table="TEACHER2SUBJECT">
+        <id name="Teacher2SubjectId" type="java.lang.Integer">
+            <column name="TEACHER2SUBJECTID" />
+            <generator class="native" />
+        </id>
+        <property name="teacherId" type="java.lang.Integer">
+            <column name="TEACHERID" />
+        </property>
+        <property name="SubjectId" type="java.lang.Integer">
+            <column name="SUBJECTID" />
+        </property>
+        <property name="Cdate" type="java.util.Date">
+            <column name="CDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

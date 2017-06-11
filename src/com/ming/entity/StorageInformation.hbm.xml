@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 11:12:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ming.entity.StorageInformation" table="STORAGEINFORMATION">
+        <id name="StorageInformationId" type="int">
+            <column name="STORAGEINFORMATIONID" />
+            <generator class="assigned" />
+        </id>
+        <property name="teacherId" type="int">
+            <column name="TEACHERID" />
+        </property>
+        <property name="subjectId" type="int">
+            <column name="SUBJECTID" />
+        </property>
+        <property name="cDate" type="java.util.Date" access="field">
+            <column name="CDATE" />
+        </property>
+        <property name="storageName" type="java.lang.String">
+            <column name="STORAGENAME" />
+        </property>
+        <property name="category" type="int">
+            <column name="CATEGORY" />
+        </property>
+    </class>
+</hibernate-mapping>

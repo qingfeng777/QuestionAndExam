@@ -1,0 +1,80 @@
+package com.ming.entity;
+
+import javax.persistence.Column;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+public class TFStorages {
+	/**
+	 * Id
+storageId
+Topic
+Image
+Answer
+Analysis
+Section
+Difficulty
+
+	 */
+	private Integer TFStoragesId;
+	private Integer storageId;
+	@NotEmpty
+	@Column(unique=true)
+	private String topic;
+	private String image;
+	@NotEmpty
+	private String answer;
+	private String analysis;
+	private Integer section;
+	private Integer difficulty;
+	public Integer getTFStoragesId() {
+		return TFStoragesId;
+	}
+	public void setTFStoragesId(Integer tFStoragesId) {
+		TFStoragesId = tFStoragesId;
+	}
+	public Integer getStorageId() {
+		return storageId;
+	}
+	public void setStorageId(Integer storageId) {
+		this.storageId = storageId;
+	}
+	public String getTopic() {
+		return topic;
+	}
+	public void setTopic(String topic) {
+		this.topic = topic;
+	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
+	public String getAnswer() {
+		return answer;
+	}
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
+	public String getAnalysis() {
+		return analysis;
+	}
+	public void setAnalysis(String analysis) {
+		this.analysis = analysis;
+	}
+	public Integer getSection() {
+		return section;
+	}
+	public void setSection(Integer section) {
+		this.section = section;
+	}
+	public Integer getDifficulty() {
+		return difficulty;
+	}
+	public void setDifficulty(Integer difficulty) {
+		this.difficulty = difficulty;
+	}
+	
+	
+}

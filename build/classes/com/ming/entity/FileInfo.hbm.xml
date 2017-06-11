@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 11:12:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ming.entity.FileInfo" table="FILEINFO">
+        <id name="fileInfoId" type="java.lang.Integer">
+            <column name="FILEINFOID" />
+            <generator class="native" />
+        </id>
+        <property name="testPaperId" type="java.lang.Integer">
+            <column name="TESTPAPERID" />
+        </property>
+        <property name="userId" type="java.lang.Integer">
+            <column name="USERID" />
+        </property>
+        <property name="category" type="java.lang.Integer">
+            <column name="CATEGORY" />
+        </property>
+        <property name="cData" type="java.util.Date" access="field">
+            <column name="CDATA" />
+        </property>
+        <property name="totalScore" type="java.lang.Integer">
+            <column name="TOTALSCORE" />
+        </property>
+        <property name="score" type="java.lang.Integer">
+            <column name="SCORE" />
+        </property>
+        <property name="someDeclare" type="java.lang.String">
+            <column name="SOMEDECLARE" />
+        </property>
+    </class>
+</hibernate-mapping>

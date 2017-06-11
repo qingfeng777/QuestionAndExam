@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 11:12:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ming.entity.ChoiceStorages" table="CHOICESTORAGES">
+        <id name="ChoiceStoragesId" type="java.lang.Integer">
+            <column name="CHOICESTORAGESID" />
+            <generator class="native" />
+        </id>
+        <property name="stoId" type="java.lang.Integer">
+            <column name="STOID" />
+        </property>
+        <property name="category" type="java.lang.Integer">
+            <column name="CATEGORY" />
+        </property>
+        <property name="topic" type="java.lang.String">
+            <column name="TOPIC" />
+        </property>
+        <property name="image" type="java.lang.String">
+            <column name="IMAGE" />
+        </property>
+        <property name="optionA" type="java.lang.String">
+            <column name="OPTIONA" />
+        </property>
+        <property name="optionB" type="java.lang.String">
+            <column name="OPTIONB" />
+        </property>
+        <property name="optionC" type="java.lang.String">
+            <column name="OPTIONC" />
+        </property>
+        <property name="optionD" type="java.lang.String">
+            <column name="OPTIOND" />
+        </property>
+        <property name="answer" type="java.lang.String">
+            <column name="ANSWER" />
+        </property>
+        <property name="analysis" type="java.lang.String">
+            <column name="ANALYSIS" />
+        </property>
+        <property name="section" type="java.lang.Integer">
+            <column name="SECTION" />
+        </property>
+        <property name="difficulty" type="java.lang.Integer">
+            <column name="DIFFICULTY" />
+        </property>
+    </class>
+</hibernate-mapping>
